@@ -64,7 +64,7 @@ var updateRequest = $.ajax({
   url: "https://listalous.herokuapp.com/lists/ploumou/items/" + itemId
 })
 updateRequest.done(function(itemData) {
-    item.remove()
+    item.remove
 })
 })
 
