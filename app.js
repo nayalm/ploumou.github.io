@@ -60,7 +60,7 @@ $('#list').on('click', '.delete-button', function(event) {
 var item = $(event.target).parent()
 var itemId = item.attr('data-id')
 var updateRequest = $.ajax({
-  type: 'PUT',
+  type: 'DELETE',
   url: "https://listalous.herokuapp.com/lists/ploumou/items/" + itemId
 })
 updateRequest.done(function(itemData) {
